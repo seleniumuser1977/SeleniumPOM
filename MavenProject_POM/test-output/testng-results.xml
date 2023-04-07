@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-04-07T13:29:11Z" name="Default suite" finished-at="2023-04-07T13:29:15Z" duration-ms="3935">
+    <groups>
+    </groups>
+    <test started-at="2023-04-07T13:29:11Z" name="Default test" finished-at="2023-04-07T13:29:15Z" duration-ms="3935">
+      <class name="OrangeHRM.Testcases.adminLoginTestwithInvalidcreds">
+        <test-method is-config="true" signature="AppLaunch()[pri:0, instance:OrangeHRM.Testcases.adminLoginTestwithInvalidcreds@35dab4eb]" started-at="2023-04-07T13:28:53Z" name="AppLaunch" finished-at="2023-04-07T13:29:11Z" duration-ms="18056" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AppLaunch -->
+        <test-method signature="adminloginwithinvalidcreds()[pri:0, instance:OrangeHRM.Testcases.adminLoginTestwithInvalidcreds@35dab4eb]" started-at="2023-04-07T13:29:11Z" name="adminloginwithinvalidcreds" finished-at="2023-04-07T13:29:15Z" duration-ms="3922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminloginwithinvalidcreds -->
+        <test-method is-config="true" signature="Appclose()[pri:0, instance:OrangeHRM.Testcases.adminLoginTestwithInvalidcreds@35dab4eb]" started-at="2023-04-07T13:29:15Z" name="Appclose" finished-at="2023-04-07T13:29:15Z" duration-ms="132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Appclose -->
+      </class> <!-- OrangeHRM.Testcases.adminLoginTestwithInvalidcreds -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
