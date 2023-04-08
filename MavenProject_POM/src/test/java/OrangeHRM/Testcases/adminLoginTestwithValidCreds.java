@@ -15,7 +15,7 @@ public class adminLoginTestwithValidCreds extends AppUtils
 		
 		Loginpage lp= PageFactory.initElements(driver, Loginpage.class) ;
 		
-		lp.OrangeHRMlogin();
+		lp.OrangeHRMlogin("Admin","Qedge123!@#");
 		
 		boolean res=lp.isAdminPageDisplayed();
 		if (res)

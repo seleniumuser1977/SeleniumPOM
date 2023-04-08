@@ -18,6 +18,7 @@ public class Loginpage
 	@FindBy(linkText="Logout")
 	WebElement Logout;
 	
+	
 	@FindBy(linkText="Admin")
 	WebElement Admintab;
 	
@@ -27,26 +28,48 @@ public class Loginpage
 	//functions on the page
 	
 	
-
-	public void OrangeHRMlogin()
+//Method to login OrangeHRM WebSite
+	public boolean OrangeHRMlogin(String uid,String pwd)
 	
 	{
 		
-		Login_uid.sendKeys("Admin");
-		Login_pwd.sendKeys("Qedge113!@#");
+		Login_uid.sendKeys(uid);
+		Login_pwd.sendKeys(pwd);
 		Login.click();	
+		if ( Welcomelink.getText().contains(uid))
+		{
+			
+			return true;
+		}else
+		{
+			return false;
+			
+		}				
 		
 	}
 	
-	
-	public void OrangeHRMlogout()
+//Method to logout OrangeHRM webSite	
+	public boolean OrangeHRMlogout()
 	{
 		
 		Welcomelink.click();
 		Logout.click();
 		
+		if ( Login.isDisplayed())
+		{	
+		
+			return true;
+		}else
+			
+		{
+			return false;
+			
+		}
+		
+		
 	}
 	
+//Method to check whether Admin page Displayed or not
 	
 	public boolean isAdminPageDisplayed()
 	{
@@ -62,6 +85,7 @@ public class Loginpage
 		}
 	}
 	
+//Method to check whether Login error messages  Displayed or not for invalid login	
 	
 	public boolean isErerorMessageDispalyed()
 	
