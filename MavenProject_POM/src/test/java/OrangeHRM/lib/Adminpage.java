@@ -8,7 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
 
 
-public class adminpage
+public class Adminpage
 {
 
 	@FindBy(linkText="Admin")
